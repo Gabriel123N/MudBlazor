@@ -97,6 +97,7 @@
     <Content Remove="**/*/DoNotRemove.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".config\" />
     <Folder Include="TScripts\combined\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

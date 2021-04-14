@@ -11,6 +11,7 @@ namespace MudBlazor
         protected string Classname =>
         new CssBuilder("mud-list")
            .AddClass("mud-list-padding", !DisablePadding)
+           .AddClass("mud-list-horizontal", Horizontal)
           .AddClass(Class)
         .Build();
 
@@ -45,6 +46,11 @@ namespace MudBlazor
         /// If true, will disable the list item if it has onclick.
         /// </summary>
         [Parameter] public bool Disabled { get; set; }
+
+        /// <summary>
+        /// If true, the items will be placed horizontally.
+        /// </summary>
+        [Parameter] public bool Horizontal { get; set; }
 
         /// <summary>
         /// The current selected list item. Bind this with a two-way binding to activate the lists exclusive selection behavior.

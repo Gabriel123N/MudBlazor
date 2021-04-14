@@ -65,7 +65,7 @@ namespace MudBlazor.Docs.Server
 
             app.UseHeadElementServerPrerendering();
 
-            // only reach here if pasth does not start /wasm
+            // only reach here if path does not start /wasm
             app.UseStaticFiles();
 
             app.UseRouting();

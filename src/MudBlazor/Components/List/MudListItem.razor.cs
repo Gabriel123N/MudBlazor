@@ -16,6 +16,7 @@ namespace MudBlazor
           .AddClass("mud-ripple", MudList?.Clickable == true && !DisableRipple && !Disabled)
           .AddClass("mud-selected-item", _selected && !Disabled)
           .AddClass("mud-list-item-disabled", Disabled)
+          .AddClass("mud-list-item-horizontal", MudList?.Horizontal)
           .AddClass(Class)
         .Build();
 

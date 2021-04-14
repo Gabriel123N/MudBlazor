@@ -10,6 +10,12 @@
     }
 }
 
+.mud-list-horizontal {
+    overflow-x: auto;
+    display: inline-flex;
+    max-width: 100%;
+    width:fit-content;
+}
 .mud-list-item {
     width: 100%;
     display: flex;
@@ -36,6 +42,10 @@
             color: var(--mud-palette-action-disabled) !important;
         }
     }
+}
+
+.mud-list-item-horizontal{
+    min-width:fit-content;
 }
 
 .mud-list-item-clickable {
